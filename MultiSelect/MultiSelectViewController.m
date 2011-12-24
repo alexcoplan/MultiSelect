@@ -64,7 +64,7 @@
     // Configure the cell...
     
     cell.textLabel.text = [items objectAtIndex:row];
-    cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.accessoryType = selected[row] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     
     return cell;
 }
